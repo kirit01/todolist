@@ -1,0 +1,91 @@
+body {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ff7070 100%
+  );
+
+  font-family: "Roboto", sans-serif;
+
+}
+
+h1 {
+  background: #e74c3c ;
+  color: white;
+  /* margin removes  the space between the input tey removing margin to find out difference*/
+  margin: 0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  background: #fff;
+  height: 40px;
+  line-height: 40px;
+  color: #666;
+}
+span {
+  background: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color: white;
+  width: 0px;
+  display: inline-block;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1;
+}
+
+input {
+  font-size: 18px;
+  color: #e74c3c; 
+  background: #f7f7f7;
+  width: 100%;
+  padding: 13px 13px 13px 20px;
+  /* size of body covers the overall property of everything thats why rest of other things*/
+  /* mvp property */
+  box-sizing: border-box;
+  /*RGBA is used to make border proper liner */
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+
+input:focus {
+  background: white;
+  border: 3px solid #2980b9;
+  outline: none;
+}
+
+/*making alternate colors of li */
+li:nth-child(2n) {
+  background: #f7f7f7;
+}
+#container {
+  width: 360px;
+  margin: 20vh auto;
+  background: #f7f7f7;
+  /* border: 2px solid gray; */
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}
+.fa-plus-circle {
+  float: right;
+}
